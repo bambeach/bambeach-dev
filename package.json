@@ -1,0 +1,32 @@
+{
+    "name": "bambeach.dev",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "build": "webpack",
+        "start": "webpack serve"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.23.9",
+        "@babel/preset-env": "^7.23.9",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^9.1.3",
+        "babel-preset-env": "^1.7.0",
+        "css-loader": "^6.8.1",
+        "dart-sass": "^1.25.0",
+        "extract-loader": "^5.1.0",
+        "file-loader": "^6.2.0",
+        "sass": "1.71.1",
+        "sass-loader": "^13.3.2",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
+    },
+    "dependencies": {
+        "@material/button": "^14.0.0",
+        "@material/icon-button": "^14.0.0",
+        "@material/ripple": "^14.0.0",
+        "@material/top-app-bar": "^14.0.0"
+    }
+}

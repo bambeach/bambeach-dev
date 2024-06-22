@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Welcome to BJ's Developer Page</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/10.3.0/firebase-app-compat.js"></script>
@@ -23,10 +23,15 @@
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
+    <script type="module" src="./scripts/index.js"></script>
+
+    <link href="fonts/Roboto/" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+
+    <!-- <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h2 { color: #0048ff; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
       #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
       #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
       #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
@@ -34,20 +39,41 @@
       #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
       @media (max-width: 600px) {
         body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+        body { border-top: 16px solid #0048ff; }
       }
-    </style>
+    </style> -->
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center">
+        <span class="mdc-top-app-bar__title">Bambeach</span>
+      </section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center" role="toolbar">
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Home">Home</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="About">About</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Portfolio">Portfolio</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Contact">Contact</button>
+      </section>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </header>
+  <main class="mdc-top-app-bar--fixed-adjust">
+    App content
+  </main>
+  <body>
+    <img src="images/Bryce.jpg" alt="Welcome Image" />
+    <button class="foo-button mdc-button">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Button</span>
+    </button>
+    <div id="message">
+      <h2>BJ Christiansen</h2>
+      <h1>Android Developer</h1>
+      <p>Passionate and Creative</p>
+      <!-- <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a> -->
+    </div>
+    <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
 
-    <script>
+    <!-- <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -84,6 +110,7 @@
           loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
         }
       });
-    </script>
+    </script> -->
+    <script src="bundle.js" async></script>
   </body>
 </html>
